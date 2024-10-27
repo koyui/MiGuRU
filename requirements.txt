@@ -1,0 +1,5 @@
+numpy==2.0.0
+pandas==2.2.2
+pygame==2.5.2
+tqdm==4.66.4
+matplotlib==3.9.0
