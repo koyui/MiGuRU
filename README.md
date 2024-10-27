@@ -119,7 +119,7 @@ For any square $k$, if it contains a black disc, the $k$-th bit of $\mathrm{S_B}
 2. **Status Update**
 3. **Feature Extraction**
 
-Details please according to our paper.
+Details please refer to our paper.
 
 <img src="figs/successors.png" width="60%" >
 
