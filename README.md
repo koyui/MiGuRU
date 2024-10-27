@@ -37,6 +37,8 @@ conda create -n othello python=3.10 -y
 pip install -r requirements.txt
 ```
 
+
+
 ### <font color="orange">Test </font>
 
 After preparing environment, you can test our project with <font color="blue">**test.py**</font>.
@@ -50,6 +52,8 @@ We have provided several functions.
 - If you want to test our **data-Based Q-learning Agent** against **Random Agen**t:
   - Run `dataLearningTestRandom()`
 - Other functions can be called in the same way to test.
+
+
 
 ### <font color="orange">Train your own RL Agent</font>
 
@@ -69,6 +73,8 @@ We have provided several train functions.
 
 <font color="red">**All the logs and output for training will lie in `weight/`, if the folder doesn't exist before training, please make one.**</font>
 
+
+
 ### <font color="orange">Run SA to find better Minimax Weight</font>
 
 <img src="figs/SA2.png" width="40%" >
@@ -80,6 +86,8 @@ python sa.py
 The figure of weights changing with the iteration increasing will be saved as `sa.png`.
 
 <img src="figs/sa.png" width="60%" >
+
+
 
 ### <font color="orange">How to Prepare a dataset</font>
 
@@ -104,6 +112,8 @@ The figure of weights changing with the iteration increasing will be saved as `s
 2. 点击<font color="blue">**棋谱box形式**</font>选项框
 3. 然后点击<font color="blue">**变换**</font>按钮，下载处理好的CSV文件。
 
+
+
 ### <font color="orange">About Optimization</font>
 
 ###### State Aggregation
@@ -127,11 +137,15 @@ Details please refer to our paper.
 
 Use a $\mathrm{150k}$-entry dict to store all legal moves and resulting states.
 
+
+
 ## <font color="orange">Experiments</font>
 
 <img src="figs/exp1.png" width="80%" >
 
 <img src="figs/exp2.png" width="80%" >
+
+
 
 ### <font color="orange">Acknowledgements</font>
 
@@ -140,6 +154,8 @@ Thanks to the following work that we refer to and benefit from:
 - CS181 AI course
   - Our `utils.py`, `minimaxAgent.py`, `featureExtractors.py` and `learningAgents.py` all take CS181 PA framework as reference
 - CS181 AI course project comes from UC Berkeley, we keep the licenses in the above $4$ python files.
+
+
 
 ### <font color="orange">Contributors</font>
 
