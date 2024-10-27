@@ -6,13 +6,13 @@
 
 Ciallo～(∠·ω< ), welcome to the world of Othello!
 
-<img src="figs/ciallo.png" width="40%" align=left>
+<img src="figs/ciallo.png" width="40%" >
 
 In this project, we develop multiple game agents for Othello, a board game with complex strategies. We perform extensive optimizations of speed and hyperparameters. Through experiments, we evaluate these agents’ performance by analyzing win rates and efficiency. Our results offer insights into each approach and suggest potential refinement for Othello.
 
-Our paper are provided in 
+Our paper are provided in `./paper`.
 
-<img src="figs/contrast_1_1.gif" width="80%" align=left>
+<img src="figs/contrast_1_1.gif" width="80%">
 
 ###### Environment Setup
 
@@ -71,7 +71,7 @@ We have provided several train functions.
 
 ### <font color="orange">Run SA to find better Minimax Weight</font>
 
-<img src="figs/SA2.png" width="40%" align=left>
+<img src="figs/SA2.png" width="40%" >
 
 ```
 python sa.py
@@ -79,7 +79,7 @@ python sa.py
 
 The figure of weights changing with the iteration increasing will be saved as `sa.png`.
 
-<img src="figs/sa.png" width="60%" align=left>
+<img src="figs/sa.png" width="60%" >
 
 ### <font color="orange">How to Prepare a dataset</font>
 
@@ -87,18 +87,18 @@ The figure of weights changing with the iteration increasing will be saved as `s
 
 数据集来源：`https://www.ffothello.org/informatique/la-base-wthor/`
 
-<img src="figs/source.png" width="80%" align=left>
+<img src="figs/source.png" width="80%" >
 
 - 网站是法语，开一下谷歌翻译
 - 可以下载到WTHOR格式的数据集。
 
 能够解析数据集的网站：`https://lavox.github.io/wthor.html`
 
-<img src="figs/website.png" width="40%" align=left>
+<img src="figs/website.png" width="40%" >
 
 做法：
 
-<img src="figs/dataset.png" width="60%" align=left>
+<img src="figs/dataset.png" width="60%" >
 
 1. 将`.JOU`，`.TRN`，`.wtb`文件分别放入网站文本框对应位置
 2. 点击<font color="blue">**棋谱box形式**</font>选项框
@@ -111,7 +111,7 @@ The figure of weights changing with the iteration increasing will be saved as `s
 We define a new board state as a tuple $\mathrm{(S_B, S_W)}$, where both $\mathrm{S_B}$ and $\mathrm{S_W}$ represent unsigned $64$-bits integers. The $64$ squares of the board are sequentially labeled from $0$ to $63$, starting from the top-left and moving to the bottom-right.
 For any square $k$, if it contains a black disc, the $k$-th bit of $\mathrm{S_B}$ is set to $1$. Similarly, if a square $k$ contains a white disc, the $k$-th bit of $\mathrm{S_W}$ is set to $1$. All unset bits default to $0$.
 
-<img src="figs/stateAggregation.png" width="60%" align=left>
+<img src="figs/stateAggregation.png" width="60%" >
 
 ###### Successors Generating
 
@@ -121,7 +121,7 @@ For any square $k$, if it contains a black disc, the $k$-th bit of $\mathrm{S_B}
 
 Details please according to our paper.
 
-<img src="figs/successors.png" width="60%" align=left>
+<img src="figs/successors.png" width="60%" >
 
 ###### Cache
 
@@ -129,9 +129,9 @@ Use a $\mathrm{150k}$-entry dict to store all legal moves and resulting states.
 
 ## <font color="orange">Experiments</font>
 
-<img src="figs/exp1.png" width="80%" align=left>
+<img src="figs/exp1.png" width="80%" >
 
-<img src="figs/exp2.png" width="80%" align=left>
+<img src="figs/exp2.png" width="80%" >
 
 ### <font color="orange">Acknowledgements</font>
 
