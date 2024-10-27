@@ -159,7 +159,7 @@ Thanks to the following work that we refer to and benefit from:
 
 ### <font color="orange">Contributors</font>
 
-Yinuo Bai - [otanaaa](https://github.com/otanaaa)
+Yinuo Bai - [otanaaa](https://github.com/otanaaa)[](这是一个彩蛋)
 
 - Game UI, Visualization, Framework.
 - Minimax Agent.
